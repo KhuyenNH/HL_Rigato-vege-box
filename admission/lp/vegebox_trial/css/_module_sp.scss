@@ -1,0 +1,14 @@
+.container {
+    margin: auto;
+}
+.spFlex {
+    display: flex;
+    align-items: flex-start;
+}
+.listItems {
+    @extend %clearfix;
+}
+.note {
+    font-size: 13px;
+//     letter-spacing: 0.5px;
+}

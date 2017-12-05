@@ -1,0 +1,22 @@
+%w970 {
+    width: 970px;
+    margin: auto;
+}
+%clearfix {
+    &:after {
+        content: "";
+        clear: both;
+        visibility: hidden;
+        display: block;
+        height: 0;
+    }
+}
+
+// ----------------- Color
+$color-primary: #d00e31;
+$color-pink: #fdf3f4;
+$color-pink2: #ffe6eb;
+$color-brd1: #8a8a8a;
+
+$color-a: #fff;
+$color-o: #000;

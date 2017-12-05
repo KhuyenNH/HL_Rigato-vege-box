@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/* ----------------------------------------------------------------
+base
+----------------------------------------------------------------- */
+body {
+	font-family: "ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","游ゴシック","Yu Gothic","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+.main-wrap {width: 100%;}
+.wrap-content {
+	width: 980px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+a {text-decoration: underline;}
+a:hover {text-decoration: none;}
+.over-opc:hover {opacity: 0.8;}
+
+.pc-on{display: block !important;}
+.pc-off{display: none !important;}
+/* 980 break point */
+@media all and (max-width: 980px) { 
+	.main-wrap {
+		width: 980px;
+		margin: 0 auto;
+	}
+}
+/* 767 break point */
+@media all and (max-width: 767px) { 
+	.main-wrap, .wrap-content {width: 100%;}
+	.pc-on{display: none !important;}
+	.pc-off{display: block !important;}
+}
+
+
+
+/* ----------------------------------------------------------------
+header
+----------------------------------------------------------------- */
+#header .logo {
+	display: inline;
+	font-size: 12px;
+	font-weight: normal;
+}
+#header .logo > * {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+#header .logo img{
+	width:46px;
+	height:50px;
+	margin:6px 0;
+}
+#header .utility {
+	float: right;
+	padding: 25px 0;
+}
+#header .utility li a {
+	background: url(../img/icn_arrow01.gif) no-repeat left 50%;
+	padding-left: 10px;
+}
+
+/* Smart Phone 767 break point */
+@media all and (max-width: 767px) { 
+	#header .wrap-content {padding: 4px 3.5%;		}
+	#header .logo > * {
+		font-size: 10px;
+		margin-right: 5px;
+	}
+	#header .logo img {width:37px;height:40px;margin:3px 0;}
+	#header .utility {
+		font-size: 10px;
+		padding: 15px 0;
+	}
+}
+
+
+
+/* ----------------------------------------------------------------
+global navi
+----------------------------------------------------------------- */
+#gnav {
+	background: url(../img/navBg.jpg) #9fc44c no-repeat 50% top;
+	height: 89px;
+}
+#gnav .wrap-content {padding: 16px 30px 0;}
+
+#gnav ul {
+	display: inline-block;
+	width: 100%;
+}
+#gnav ul li {
+	width: 25%;
+	box-sizing: border-box;
+	padding: 0 2px;
+	float: left;
+}
+#gnav ul li a {
+	display: block;
+	line-height: 1.2;
+	min-height: 55px;
+	padding-top: 11px;
+	background: #fff;
+	color: #7e6340;
+	text-align: center;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	text-decoration: none;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+#gnav ul li a:hover span, #gnav ul li a.active span {color: #fff !important;}
+
+#gnav ul li.nav01 a:hover, #gnav ul li.nav01 a.active {color: #fff;background: #eb7776;}
+#gnav ul li.nav01 a span { color: #eb7faa; font-size: 14px;}
+
+#gnav ul li.nav02 a:hover, #gnav ul li.nav02 a.active {color: #fff;background: #f08600;}
+#gnav ul li.nav02 a span { color: #f38e00; font-size: 14px;}
+
+#gnav ul li.nav03 a:hover, #gnav ul li.nav03 a.active {color: #fff;background: #e9bb00;}
+#gnav ul li.nav03 a span {color: #e9bb00; font-size: 14px;}
+
+#gnav ul li.nav04 a span {color: #42b5a4; font-size: 14px;}
+#gnav ul li.nav04 a:hover, #gnav ul li.nav04 a.active {color: #fff;background: #42b6a4;}
+
+#gnav ul li.nav05 a {padding-top: 18px;}
+#gnav ul li.nav05 a:hover, #gnav ul li.nav05 a.active {color: #fff;background: #7e6440;}
+#gnav ul li.nav05 a span{font-size: 14px;}
+
+
+/* Smart Phone 767 break point */
+@media all and (max-width: 767px) {
+	#gnav {
+		background: url(../img/navBg.jpg) #9fc44c no-repeat 50% top;
+		background-size: 100% 100%;
+		height: 75px;
+		position: relative;
+	}
+	/*
+	#gnav:after, #gnav:before {
+		content: "";
+		position: absolute;
+		height: 75px;
+		width: 20px;
+		background: #4d2f1e;
+		z-index: 10;
+	}
+	#gnav:before {
+		top: 0;
+		left: 0;
+		background: url(../img/nav_prev.png) #9fc44c no-repeat left top;
+		background-size: 100% 100%;
+	}
+	#gnav:after {
+		top: 0;
+		right: 0;
+		background: url(../img/nav_next.png) #9fc44c no-repeat right top;
+		background-size: 100% 100%;
+	}
+	*/
+
+	#gnav .wrap-content {
+		padding: 0 20px;
+		position: relative;
+		overflow: hidden;
+		height: 75px;
+	}
+	#gnav ul {
+		position: absolute;
+		display: block;
+		width: 166%;
+		padding: 12px 0;
+		height: 63px;
+	}
+	#gnav ul li {
+		width: 18.1%;
+		padding: 0 2px;
+	}
+	#gnav ul li a {
+		font-size: 12px;
+		display: block;
+		min-height: 50px;
+		padding-top: 8px;
+		border: 2px solid #fff;
+		border-radius: 30px;
+		text-decoration: none;
+		font-weight: bold;
+		box-sizing: border-box;
+	}
+	#gnav ul li.nav05 a {padding-top: 8px;}
+	#gnav ul li.nav05 a span {font-size: 12px;color: #7e6340;}
+}
+
+
+
+/* ----------------------------------------------------------------
+footer
+----------------------------------------------------------------- */
+#footer .fnav {
+	background: #5b4c35;
+	padding: 20px 0;
+}
+#footer .fnav .wrap-content {position: relative;}
+#footer .fnav ul {text-align: center;}
+#footer .fnav ul li {
+	display: inline;
+	border-left: 1px solid #fff;
+	padding-left: 10px;
+	margin-left: 8px;
+}
+#footer .fnav ul li:first-child {border: none;}
+#footer .fnav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+#footer .fnav ul li a:hover {text-decoration: underline;}
+#footer .fnav .btn-pagetop {
+	position: absolute;
+	top: -45px;
+	right: 0;
+}
+
+
+#footer .footer-bottom { 
+	text-align: center;
+	padding: 40px 0 30px;
+}
+#footer .footer-bottom ul {
+	text-align: center;
+	margin-bottom: 15px;
+}
+#footer .footer-bottom ul li {
+	display: inline;
+	border-left: 1px solid #5b4c35;
+	padding-left: 10px;
+	margin-left: 8px;
+}
+#footer .footer-bottom ul li:first-child {border: none;}
+#footer .footer-bottom ul li a {
+	color: #343434;
+	text-decoration: none;
+}
+#footer .footer-bottom ul li a:hover {text-decoration: underline;}
+#footer .footer-bottom .footer-bottom_copyright address {display: inline;}
+
+
+
+/* Smart Phone 767 break point */
+@media all and (max-width: 767px) { 
+	#footer .fnav {padding: 0;}
+	#footer .fnav ul {text-align: left;}
+	#footer .fnav ul li {
+		display: block;
+		border-left: none;
+		border-top: 1px solid #fff;
+		margin-left: 0;
+		padding-left: 0;
+	}
+	#footer .fnav ul li a {
+		display: block;
+		font-size: 20px;
+		color: #fff;
+		padding: 12px 0 12px 30px;
+		text-decoration: none;
+	}
+	#footer .fnav ul li a:hover {text-decoration: underline;}
+
+	#footer .fnav .btn-pagetop {
+		position: absolute;
+		top: -25px;
+		right: 0;
+	}
+
+	#footer .footer-bottom { 
+		text-align: center;
+		padding: 40px 0 30px;
+	}
+	#footer .footer-bottom ul {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+	#footer .footer-bottom ul li {
+		display: block;
+		border-left: none;
+		padding: 0 0 8px 30px;
+		margin-left: 0;
+	}
+	#footer .footer-bottom .footer-bottom_copyright {
+		font-size: 10px;
+	}
+	#footer .footer-bottom .footer-bottom_copyright address {display: block;}
+}

@@ -1,0 +1,47 @@
+
+<!-- WebAntenna -->
+<script type="text/javascript" src="https://tr.webantenna.info/js/webantenna.js"></script>
+<script type="text/javascript">
+function wa_teiki_confirm() {
+ if ( typeof( webantenna ) == 'function' ) {
+  _wa = new WA_Processor();
+  _wa.account = 'WAK6Ke-1';
+  _wa.cv = 'teiki_confirm';
+  webantenna( true );
+  var wait = function( msec ) {
+   var s = ( new Date() ).getTime();
+   while ( ( new Date ).getTime() - s < msec );
+  }
+  wait( 100 );
+ }
+}
+function wa_trial_confirm() {
+ if ( typeof( webantenna ) == 'function' ) {
+  _wa = new WA_Processor();
+  _wa.account = 'WAK6Ke-1';
+  _wa.cv = 'trial_confirm';
+  webantenna( true );
+  var wait = function( msec ) {
+   var s = ( new Date() ).getTime();
+   while ( ( new Date ).getTime() - s < msec );
+  }
+  wait( 100 );
+ }
+}
+</script>
+<!-- end WebAntenna -->
+
+<!-- Yahoo Tag Manager --> 
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=FPlDB4O";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=FPlDB4O" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+<!-- Yahoo Tag Manager -->

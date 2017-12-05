@@ -1,0 +1,9 @@
+AddHandler server-parsed .shtml .shtm .html
+
+
+AddOutputFilter INCLUDES .html
+Options +Indexes
+
+
+## add inc for php in .html
+AddHandler php5-script .html

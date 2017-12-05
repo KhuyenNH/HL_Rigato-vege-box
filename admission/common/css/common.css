@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/*フッター*/
+
+#return,
+#return_top {
+	width: 980px;
+	height: 23px;
+	margin:0 auto;
+	text-align:right;
+	clear:both;
+}
+#return_top {
+	text-align:center;
+}
+#return img, #return_top img {
+	padding-right: 10px;
+	float: right;
+	cursor: pointer;
+}
+
+footer {
+	width: 100%;
+	min-width:980px;
+	padding: 20px 0 35px 0;
+	background: #F5F0E0;
+	overflow:hidden;
+	text-align:center;
+}
+footer nav {
+	width: auto;
+	height: auto;
+}
+footer ul {
+	text-align: center;
+	margin-bottom: 15px;
+}
+footer li {
+	display: inline;
+	line-height: 1.0;
+	padding:0 15px;
+	border-left: 1px solid #000;
+}
+footer nav ul li:first-child {
+	border:none!important;
+}
+
+footer li a {
+	color: #000000;
+	text-decoration:none;
+}
+footer li a:hover {
+	text-decoration:underline;
+}
+
+#notice,
+#footer_order address{
+	display:inline;
+	text-align:center;
+}

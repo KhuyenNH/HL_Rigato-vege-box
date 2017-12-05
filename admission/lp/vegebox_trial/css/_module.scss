@@ -1,0 +1,24 @@
+.container {
+    position: relative;
+    width: 970px;
+    margin: auto;
+}
+
+.listItems_tb {
+    display: table;
+    width: 100%;
+    .items {
+        display: table-cell;
+    }
+}
+.listFlex {
+    display: flex;
+    align-items: flex-start;
+}
+.listItems {
+    @extend %clearfix;
+}
+.note {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
