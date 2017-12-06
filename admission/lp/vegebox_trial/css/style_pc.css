@@ -337,15 +337,15 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .local_infoSale .row_02 .listFlex.second {
   padding-top: 15px;
   padding-left: 82px;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  align-items: flex-end;
 }
 
 .local_infoSale .row_02 .title_h3 {
@@ -363,17 +363,17 @@
 .local_infoSale .row_02 .text {
   padding-top: 15px;
   text-align: right;
-  font-size: 25px;
+  font-size: 32px;
   line-height: 18px;
   font-weight: bold;
 }
 
 .local_infoSale .row_02 .text span {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .local_infoSale .row_02 .text .fs12 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /*	local_04
@@ -412,7 +412,7 @@
 }
 
 #local_04 .row_03 {
-  padding: 50px 15px 0 38px;
+  padding: 50px 15px 35px 38px;
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
@@ -423,6 +423,7 @@
   position: relative;
   z-index: 3;
   width: 279px;
+  top: -20px;
 }
 
 #local_04 .row_03 .avatar:after {
@@ -445,8 +446,16 @@
   font-weight: bold;
   padding-top: 22px;
   padding-left: 10px;
+  padding-bottom: 15px;
   font-size: 15px;
   line-height: 26px;
+}
+
+#local_04 .row_03 .listFlex {
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 #local_04 .row_04 {

@@ -254,10 +254,10 @@
 		padding-right: 48px;
 		.listFlex {
 			justify-content: space-between;
+			align-items: flex-end;
 			&.second {
 				padding-top: 15px;
 				padding-left: 82px;
-				align-items: flex-end;
 			}
 		}
 		.title_h3 {
@@ -274,14 +274,15 @@
 		.text {
 			padding-top: 15px;
 			text-align: right;
-			font-size: 25px;
+			// font-size: 25px;
+			font-size: 32px;
 			line-height: 18px;
 			font-weight: bold;
 			span {
-				font-size: 17px;
+				font-size: 20px;
 			}
 			.fs12 {
-				font-size: 12px;
+				font-size: 14px;
 			}
 		}
 	}
@@ -314,12 +315,13 @@
 		}
 	}
 	.row_03 {
-		padding: 50px 15px 0 38px;
+		padding: 50px 15px 35px 38px;
 		align-items: flex-end;
 		.avatar {
 			position: relative;
 			z-index: 3;
 			width: 279px;
+			top: -20px;
 			&:after {
 				content: "";
 				position: absolute;
@@ -338,9 +340,13 @@
 				font-weight: bold;
 				padding-top: 22px;
 				padding-left: 10px;
+				padding-bottom: 15px;
 				font-size: 15px;
 				line-height: 26px;
 			}
+		}
+		.listFlex {
+			align-items: flex-end;
 		}
 	}
 	.row_04 {

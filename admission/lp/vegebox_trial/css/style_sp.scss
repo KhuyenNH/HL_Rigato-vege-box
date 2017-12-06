@@ -24,6 +24,7 @@
 		position: absolute;
 		top: 0;
 		left: 35%;
+		width: 12%;
 	}
 }
 #leadArea {
@@ -59,7 +60,7 @@
 	}
 	.tooltip_01 {
 		position: absolute;
-		top: -45%;
+		top: -52%;
 		right: -1%;
 		width: 27%;
 	}
@@ -70,7 +71,7 @@
 	}
 	.note {
 		color: $color-a;
-		font-size: 17px;
+		font-size: 13px;
 		line-height: 28px;
 		font-weight: bold;
 		text-align: center;
@@ -96,9 +97,9 @@
 	}
 	.note {
 		// padding: 31px 9% 145px;
-		padding: 5% 9% 18%;
-		font-size: 20px;
-		line-height: 33px;
+		padding: 15px 9% 60px;
+		font-size: 13px;
+		line-height: 26px;
 	}
 }
 /*	local_02
@@ -106,12 +107,17 @@
 #local_02 {
 	padding-left: 5%;
 	padding-right: 5%;
+	.title_h2 {
+		margin-left: -6%;
+		margin-right: -6%;
+	}
 	.text {
 		text-align: center;
-		font-size: 30px;
-		line-height: 46px;
+		font-size: 20px;
+		// font-size: 30px;
+		line-height: 36px;
 		font-weight: bold;
-		padding: 6% 0 9%;
+		padding: 20px 0 30px;
 	}
 }
 /*	local_03
@@ -121,7 +127,7 @@
 		margin-top: 15px;
 		background: $color-pink;
 		position: relative;
-		padding: 0px 10px;
+		padding: 0px 10px 15px;
 		.avatar {
 			width: 209px;
 			position: relative;
@@ -164,7 +170,7 @@
 		}
 		.text {
 			font-weight: bold;
-			padding-top: 3px;
+			padding-bottom: 15px;
 			font-size: 15px;
 			line-height: 26px;
 		}
@@ -226,7 +232,7 @@
 		background: url("../images/bg_box.png");
 		background-size: 100%;
 		padding-left: 5%;
-		padding-right: 5%;
+		padding-right: 4.5%;
 		padding-bottom: 12px;
 		&:after {
 			content: "";
@@ -250,7 +256,8 @@
 		.text {
 			position: relative;
 			width: 70%;
-			padding-top: 25px;
+			padding-top: 20px;
+			padding-bottom: 5px;
 			// font-size: 36px;
 			font-size: 18px;
 			line-height: 30px;
@@ -266,8 +273,8 @@
 		}
 		.tooltip_02 {
 			position: absolute;
-			top: -225%;
-			right: -7%;
+			top: -230%;
+			right: -6%;
 			width: 35%;
 		}
 		.btn {
@@ -302,7 +309,7 @@
 		padding-bottom: 12px;
 		padding-top: 7px;
 		padding-left: 3.7%;
-		padding-right: 5%;
+		padding-right: 3%;
 		// padding-right: 48px;
 		&:before {
 			content: "";
@@ -347,7 +354,7 @@
 			padding: 10px 16px 8px 26px;
 			font-size: 15px;
 			line-height: 26px;
-			// width: 45%;
+			width: 45%;
 			font-weight: bold;
 			color: $color-primary;
 			background: $color-pink2;
@@ -357,13 +364,14 @@
 		}
 		.text {
 			// padding-top: 15px;
+			padding-left: 5px;
 			padding-right: 20px;
-			text-align: right;
+			// text-align: left;
 			font-size: 18px;
 			line-height: 20px;
 			font-weight: bold;
 			span {
-				font-size: 14px;
+				font-size: 12px;
 			}
 			.fs12 {
 				font-size: 8px;
@@ -474,7 +482,7 @@
 ----------------------------------*/
 #local_05 {
 	padding-top: 54px;
-	padding-bottom: 100px;
+	padding-bottom: 40px;
 	.title_h2 {
 		position: relative;
 		padding-bottom: 50px;
@@ -505,10 +513,8 @@
 		.items {
 			border-bottom: 2px dotted $color-brd1;
 			margin: 22px 0;
-			&.first {
-			}
 			li {
-				font-size: 18px;
+				font-size: 16px;
 				line-height: 33px;
 				font-weight: bold;
 				padding-left: 40px;
@@ -528,7 +534,7 @@
 	text-align: center;
 	// font-size: 16px;
 	line-height: 25px;
-	padding: 25px 0 20px;
+	padding: 25px 5px 20px;
 	a {
 		text-decoration: none;
 		color: $color-o;
@@ -549,7 +555,56 @@
 	height: auto;
 	// display: block;
 }
+@media screen and (max-width: 350px) {
+	#leadArea {
+		.text {
+			font-size: 15px;
+			line-height: 22px;
+			span {
+				font-size: 12px;
+			}
+		}
+	}
+	.local_infoSale {
+		.title_h2 {
+			font-size: 13px;
+			padding-top: 5%;
+		}
+		.row_01 {
+			.text {
+				font-size: 15px;
+				line-height: 20px;
+			}
+			span {
+				font-size: 12px;
+			}
+		}
+		.row_02 {
+			.title_h3 {
+				padding: 5px 8px 4px 14px;
+				line-height: 22px;
+			}
+			.text {
+				padding-right: 10px;
+				font-size: 15px;
+			}
+		}
+	}
+	#local_03 {
+		.row_01 {
+			.title_h3 {
+				font-size: 16px;
+			}
+			.description {
+				width: 54%;
+			}
+		}
+	}
+}
 @import "helper";
 .mL-6 {
 	margin-left: -6px;
+}
+.mR-15 {
+	margin-right: inherit;
 }

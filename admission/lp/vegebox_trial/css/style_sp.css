@@ -53,6 +53,7 @@
   position: absolute;
   top: 0;
   left: 35%;
+  width: 12%;
 }
 
 #leadArea {
@@ -87,7 +88,7 @@
 
 #leadArea .tooltip_01 {
   position: absolute;
-  top: -45%;
+  top: -52%;
   right: -1%;
   width: 27%;
 }
@@ -99,7 +100,7 @@
 
 #leadArea .note {
   color: #fff;
-  font-size: 17px;
+  font-size: 13px;
   line-height: 28px;
   font-weight: bold;
   text-align: center;
@@ -128,9 +129,9 @@
 }
 
 #local_01 .note {
-  padding: 5% 9% 18%;
-  font-size: 20px;
-  line-height: 33px;
+  padding: 15px 9% 60px;
+  font-size: 13px;
+  line-height: 26px;
 }
 
 /*	local_02
@@ -140,12 +141,17 @@
   padding-right: 5%;
 }
 
+#local_02 .title_h2 {
+  margin-left: -6%;
+  margin-right: -6%;
+}
+
 #local_02 .text {
   text-align: center;
-  font-size: 30px;
-  line-height: 46px;
+  font-size: 20px;
+  line-height: 36px;
   font-weight: bold;
-  padding: 6% 0 9%;
+  padding: 20px 0 30px;
 }
 
 /*	local_03
@@ -154,7 +160,7 @@
   margin-top: 15px;
   background: #fdf3f4;
   position: relative;
-  padding: 0px 10px;
+  padding: 0px 10px 15px;
 }
 
 #local_03 .row_01 .avatar {
@@ -208,7 +214,7 @@
 
 #local_03 .row_02 .text {
   font-weight: bold;
-  padding-top: 3px;
+  padding-bottom: 15px;
   font-size: 15px;
   line-height: 26px;
 }
@@ -280,7 +286,7 @@
   background: url("../images/bg_box.png");
   background-size: 100%;
   padding-left: 5%;
-  padding-right: 5%;
+  padding-right: 4.5%;
   padding-bottom: 12px;
 }
 
@@ -311,7 +317,8 @@
 .local_infoSale .row_01 .text {
   position: relative;
   width: 70%;
-  padding-top: 25px;
+  padding-top: 20px;
+  padding-bottom: 5px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -327,8 +334,8 @@
 
 .local_infoSale .row_01 .tooltip_02 {
   position: absolute;
-  top: -225%;
-  right: -7%;
+  top: -230%;
+  right: -6%;
   width: 35%;
 }
 
@@ -367,7 +374,7 @@
   padding-bottom: 12px;
   padding-top: 7px;
   padding-left: 3.7%;
-  padding-right: 5%;
+  padding-right: 3%;
 }
 
 .local_infoSale .row_02:before {
@@ -422,6 +429,7 @@
   padding: 10px 16px 8px 26px;
   font-size: 15px;
   line-height: 26px;
+  width: 45%;
   font-weight: bold;
   color: #d00e31;
   background: #ffe6eb;
@@ -431,15 +439,15 @@
 }
 
 .local_infoSale .row_02 .text {
+  padding-left: 5px;
   padding-right: 20px;
-  text-align: right;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
 }
 
 .local_infoSale .row_02 .text span {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .local_infoSale .row_02 .text .fs12 {
@@ -578,7 +586,7 @@
 ----------------------------------*/
 #local_05 {
   padding-top: 54px;
-  padding-bottom: 100px;
+  padding-bottom: 40px;
 }
 
 #local_05 .title_h2 {
@@ -620,7 +628,7 @@
 }
 
 #local_05 .tableContent .items li {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 33px;
   font-weight: bold;
   padding-left: 40px;
@@ -638,7 +646,7 @@
 #footer_vegebox {
   text-align: center;
   line-height: 25px;
-  padding: 25px 0 20px;
+  padding: 25px 5px 20px;
 }
 
 #footer_vegebox a {
@@ -659,6 +667,41 @@
 #vegebox img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 350px) {
+  #leadArea .text {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  #leadArea .text span {
+    font-size: 12px;
+  }
+  .local_infoSale .title_h2 {
+    font-size: 13px;
+    padding-top: 5%;
+  }
+  .local_infoSale .row_01 .text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .local_infoSale .row_01 span {
+    font-size: 12px;
+  }
+  .local_infoSale .row_02 .title_h3 {
+    padding: 5px 8px 4px 14px;
+    line-height: 22px;
+  }
+  .local_infoSale .row_02 .text {
+    padding-right: 10px;
+    font-size: 15px;
+  }
+  #local_03 .row_01 .title_h3 {
+    font-size: 16px;
+  }
+  #local_03 .row_01 .description {
+    width: 54%;
+  }
 }
 
 .tac {
@@ -695,4 +738,8 @@
 
 .mL-6 {
   margin-left: -6px;
+}
+
+.mR-15 {
+  margin-right: inherit;
 }
