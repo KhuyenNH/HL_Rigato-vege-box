@@ -38,6 +38,61 @@
   letter-spacing: 0.5px;
 }
 
+.btn {
+  background: #60873d;
+  position: relative;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  color: #fff;
+  border: 3px solid #fff;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 22px;
+  padding: 20px 0px 15px;
+  width: 657px;
+  font-size: 39px;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 18px);
+  right: 2%;
+  background: url("../images/arrow_btn_big.png") no-repeat;
+  width: 37px;
+  height: 37px;
+}
+
+.btn_small {
+  margin-top: 0;
+  margin-left: 46px;
+  padding: 15px 0px 15px;
+  width: 470px;
+  font-size: 33px;
+}
+
+.btn_small:after {
+  top: calc(50% - 15px);
+  background: url("../images/arrow_btn_small.png") no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.btn_top {
+  width: 442px;
+  margin-top: 0;
+  font-size: 31px;
+  padding: 12px 0px 10px;
+}
+
+.btn_top:after {
+  top: calc(50% - 15px);
+  background: url("../images/arrow_btn_small.png") no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
 #vegebox {
   overflow-x: hidden;
   min-width: 980px;
@@ -107,12 +162,23 @@
   line-height: 20px;
 }
 
-#leadArea .btn {
-  text-align: right;
+#leadArea .listFlex {
+  padding-left: 5px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+#leadArea .btnItems {
   position: relative;
 }
 
-#leadArea .btn .tooltip_01 {
+#leadArea .btnItems .tooltip_01 {
   position: absolute;
   top: -136px;
   right: 0;
@@ -281,7 +347,7 @@
 .local_infoSale .row_01 .text {
   position: relative;
   width: 404px;
-  padding-top: 72px;
+  padding-top: 68px;
   padding-left: 72px;
   font-size: 36px;
   line-height: 40px;
@@ -301,12 +367,6 @@
   position: absolute;
   top: -109px;
   right: -41px;
-}
-
-.local_infoSale .row_01 .btn {
-  margin-top: 22px;
-  display: block;
-  text-align: center;
 }
 
 .local_infoSale .note {
@@ -397,6 +457,7 @@
 }
 
 #local_04 .row_01 .text {
+  font-weight: bold;
   font-size: 15px;
   padding-top: 16px;
   line-height: 26px;

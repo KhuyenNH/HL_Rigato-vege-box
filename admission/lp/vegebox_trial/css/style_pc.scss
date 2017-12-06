@@ -61,8 +61,12 @@
 		padding: 18px 0 20px 38px;
 		line-height: 20px;
 	}
-	.btn {
-		text-align: right;
+	.listFlex {
+		padding-left: 5px;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+	.btnItems {
 		position: relative;
 		.tooltip_01 {
 			position: absolute;
@@ -207,7 +211,7 @@
 		.text {
 			position: relative;
 			width: 404px;
-			padding-top: 72px;
+			padding-top: 68px;
 			padding-left: 72px;
 			// font-size: 29px;
 			font-size: 36px;
@@ -228,11 +232,13 @@
 			top: -109px;
 			right: -41px;
 		}
-		.btn {
-			margin-top: 22px;
-			display: block;
-			text-align: center;
-		}
+		// .btn {
+		// 	padding: 20px 0px 15px;
+		// 	width: 657px;
+		// 	font-size: 39px;
+		// 	margin-top: 22px;
+		// 	text-align: center;
+		// }
 	}
 	.note {
 		padding: 6px 0 10px 37px;
@@ -302,6 +308,7 @@
 			padding-left: 25px;
 		}
 		.text {
+			font-weight: bold;
 			font-size: 15px;
 			padding-top: 16px;
 			line-height: 26px;

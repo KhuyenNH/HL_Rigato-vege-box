@@ -24,6 +24,42 @@
 
 .note {
   font-size: 13px;
+  line-height: 23px;
+}
+
+.btn {
+  background: #60873d;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 22px;
+  padding: 17px 0px 14px;
+  width: 100%;
+  font-size: 23px;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  right: 2%;
+  top: calc(50% - 15px);
+  background: url("../images/arrow_btn_small.png") no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.btn_small {
+  margin-top: 10px;
+}
+
+.btn_top {
+  margin-top: 0;
 }
 
 #vegebox {
@@ -76,7 +112,7 @@
   position: relative;
   color: #fff;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 25px;
   padding-bottom: 10px;
   font-weight: bold;
   width: 72%;
@@ -93,15 +129,14 @@
   width: 27%;
 }
 
-#leadArea .btnItems {
+#leadArea .btn {
   margin: 12px 0;
   text-align: center;
 }
 
 #leadArea .note {
   color: #fff;
-  font-size: 13px;
-  line-height: 28px;
+  line-height: 25px;
   font-weight: bold;
   text-align: center;
 }
@@ -130,8 +165,7 @@
 
 #local_01 .note {
   padding: 15px 9% 60px;
-  font-size: 13px;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 /*	local_02
@@ -263,14 +297,14 @@
   left: 0;
   position: absolute;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 29px;
   color: #d00e31;
   background: url("../images/tit_05_sp.png") no-repeat;
   background-size: 100%;
   width: 71%;
   height: 26%;
-  padding-top: 6%;
+  padding-top: 5.5%;
   padding-left: 29%;
   z-index: 1;
 }
@@ -280,13 +314,22 @@
   width: 96%;
 }
 
+.local_infoSale .noteBtn {
+  text-align: center;
+  position: relative;
+  font-size: 13px;
+  z-index: 1;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
 .local_infoSale .row_01 {
   position: relative;
   border-radius: 20px;
   background: url("../images/bg_box.png");
   background-size: 100%;
-  padding-left: 5%;
-  padding-right: 4.5%;
+  padding-left: 6%;
+  padding-right: 6%;
   padding-bottom: 12px;
 }
 
@@ -310,8 +353,6 @@
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 
 .local_infoSale .row_01 .text {
@@ -320,7 +361,7 @@
   padding-top: 20px;
   padding-bottom: 5px;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 25px;
   font-weight: bold;
 }
 
@@ -334,17 +375,13 @@
 
 .local_infoSale .row_01 .tooltip_02 {
   position: absolute;
-  top: -230%;
-  right: -6%;
-  width: 35%;
+  top: -202%;
+  right: -5%;
+  width: 30%;
 }
 
 .local_infoSale .row_01 .btn {
-  display: block;
-  text-align: center;
   margin: 12px auto 0;
-  position: relative;
-  z-index: 2;
 }
 
 .local_infoSale .note {
@@ -373,8 +410,8 @@
   border-radius: 20px;
   padding-bottom: 12px;
   padding-top: 7px;
-  padding-left: 3.7%;
-  padding-right: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 .local_infoSale .row_02:before {
@@ -415,21 +452,15 @@
 }
 
 .local_infoSale .row_02 .listFlex.second {
-  padding: 10px 3% 0;
-}
-
-.local_infoSale .row_02 .listFlex .btn {
-  position: relative;
-  z-index: 2;
-  display: block;
-  padding-top: 10px;
+  padding: 10px 0 0 0;
 }
 
 .local_infoSale .row_02 .title_h3 {
   padding: 10px 16px 8px 26px;
   font-size: 15px;
   line-height: 26px;
-  width: 45%;
+  width: 40%;
+  margin-left: -2.7%;
   font-weight: bold;
   color: #d00e31;
   background: #ffe6eb;
@@ -440,7 +471,7 @@
 
 .local_infoSale .row_02 .text {
   padding-left: 5px;
-  padding-right: 20px;
+  padding-right: 10px;
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
@@ -670,6 +701,19 @@
 }
 
 @media screen and (max-width: 350px) {
+  .btn {
+    font-size: 18px;
+  }
+  .btn:after {
+    content: "";
+    position: absolute;
+    right: 2%;
+    top: calc(50% - 12px);
+    background: url("../images/arrow_btn_small.png") no-repeat;
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
+  }
   #leadArea .text {
     font-size: 15px;
     line-height: 22px;

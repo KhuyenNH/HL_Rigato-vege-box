@@ -44,7 +44,7 @@
 		position: relative;
 		color: $color-a;
 		font-size: 18px;
-		line-height: 30px;
+		line-height: 25px;
 		// font-size: 31px;
 		// line-height: 40px;
 		padding-bottom: 10px;
@@ -64,15 +64,13 @@
 		right: -1%;
 		width: 27%;
 	}
-	.btnItems {
+	.btn {
 		margin: 12px 0;
-		// margin: 25px 0;
 		text-align: center;
 	}
 	.note {
 		color: $color-a;
-		font-size: 13px;
-		line-height: 28px;
+		line-height: 25px;
 		font-weight: bold;
 		text-align: center;
 	}
@@ -98,8 +96,7 @@
 	.note {
 		// padding: 31px 9% 145px;
 		padding: 15px 9% 60px;
-		font-size: 13px;
-		line-height: 26px;
+		line-height: 25px;
 	}
 }
 /*	local_02
@@ -210,14 +207,14 @@
 		left: 0;
 		position: absolute;
 		font-weight: bold;
-		font-size: 16px;
+		font-size: 15px;
 		line-height: 29px;
 		color: #d00e31;
 		background: url('../images/tit_05_sp.png') no-repeat;
 		background-size: 100%;
 		width: 71%;
 		height: 26%;
-		padding-top: 6%;
+		padding-top: 5.5%;
 		padding-left: 29%;
 		z-index: 1;
 	}
@@ -225,14 +222,22 @@
 		padding: 0 3%;
 		width: 96%;
 	}
+	.noteBtn {
+		text-align: center;
+		position: relative;
+		font-size: 13px;
+		z-index: 1;
+		font-weight: bold;
+		padding-top: 3px;
+	}
 	.row_01 {
 		position: relative;
 		border-radius: 20px;
 		// background: $color-a;
 		background: url("../images/bg_box.png");
 		background-size: 100%;
-		padding-left: 5%;
-		padding-right: 4.5%;
+		padding-left: 6%;
+		padding-right: 6%;
 		padding-bottom: 12px;
 		&:after {
 			content: "";
@@ -250,8 +255,8 @@
 			position: relative;
 			z-index: 9;
 			align-items: flex-end;
-			padding-left: 2%;
-			padding-right: 2%;
+			// padding-left: 2%;
+			// padding-right: 2%;
 		}
 		.text {
 			position: relative;
@@ -260,7 +265,7 @@
 			padding-bottom: 5px;
 			// font-size: 36px;
 			font-size: 18px;
-			line-height: 30px;
+			line-height: 25px;
 			font-weight: bold;
 		}
 		span {
@@ -273,16 +278,12 @@
 		}
 		.tooltip_02 {
 			position: absolute;
-			top: -230%;
-			right: -6%;
-			width: 35%;
+			top: -202%;
+			right: -5%;
+			width: 30%;
 		}
 		.btn {
-			display: block;
-			text-align: center;
 			margin: 12px auto 0;
-			position: relative;
-			z-index: 2;
 		}
 	}
 	.note {
@@ -308,8 +309,8 @@
 		border-radius: 20px;
 		padding-bottom: 12px;
 		padding-top: 7px;
-		padding-left: 3.7%;
-		padding-right: 3%;
+		padding-left: 6%;
+		padding-right: 6%;
 		// padding-right: 48px;
 		&:before {
 			content: "";
@@ -340,13 +341,7 @@
 			justify-content: space-between;
 			align-items: center;
 			&.second {
-				padding: 10px 3% 0;
-			}
-			.btn {
-				position: relative;
-				z-index: 2;
-				display: block;
-				padding-top: 10px;
+				padding: 10px 0 0 0;
 			}
 		}
 		.title_h3 {
@@ -354,7 +349,8 @@
 			padding: 10px 16px 8px 26px;
 			font-size: 15px;
 			line-height: 26px;
-			width: 45%;
+			width: 40%;
+			margin-left: -2.7%;
 			font-weight: bold;
 			color: $color-primary;
 			background: $color-pink2;
@@ -363,9 +359,8 @@
 			border-bottom: 2px solid $color-primary;
 		}
 		.text {
-			// padding-top: 15px;
 			padding-left: 5px;
-			padding-right: 20px;
+			padding-right: 10px;
 			// text-align: left;
 			font-size: 18px;
 			line-height: 20px;
@@ -556,6 +551,19 @@
 	// display: block;
 }
 @media screen and (max-width: 350px) {
+	.btn {
+		font-size: 18px;
+		&:after {
+	        content: "";
+	        position: absolute;
+	        right: 2%;
+	        top: calc(50% - 12px);
+	        background: url('../images/arrow_btn_small.png') no-repeat;
+			background-size: 100% 100%;
+	        width: 24px;
+	        height: 24px;
+	    }
+	}
 	#leadArea {
 		.text {
 			font-size: 15px;
