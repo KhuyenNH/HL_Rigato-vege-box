@@ -23,8 +23,9 @@
 }
 
 .note {
-  font-size: 13px;
-  line-height: 23px;
+  font-size: 2.2vw;
+  line-height: 1.5;
+  font-weight: bold;
 }
 
 .btn {
@@ -38,20 +39,23 @@
   border: 2px solid #fff;
   text-decoration: none;
   text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 22px;
   padding: 17px 0px 14px;
   width: 100%;
-  font-size: 23px;
+  font-size: 6vw;
 }
 
 .btn:after {
   content: "";
   position: absolute;
   right: 2%;
-  top: calc(50% - 15px);
-  background: url("../images/arrow_btn_small.png") no-repeat;
-  width: 30px;
-  height: 30px;
+  top: calc(50% - 3vw);
+  background: url("../images/arrow_btn_big.png") no-repeat;
+  background-size: 100% 100%;
+  width: 6vw;
+  height: 6vw;
 }
 
 .btn_small {
@@ -75,14 +79,7 @@
 #header_vegebox {
   background: url("../images/bg_header_sp.jpg") no-repeat;
   background-size: 100% 100%;
-  height: 245px;
-}
-
-#header_vegebox .logo {
-  position: relative;
-  width: 42%;
-  padding-top: 7.5%;
-  left: 5%;
+  padding-bottom: 5%;
 }
 
 #header_vegebox .ico_top {
@@ -93,51 +90,52 @@
 }
 
 #leadArea {
-  padding: 7% 5% 3%;
   position: relative;
-  background: #d00e31;
 }
 
 #leadArea .title_h2 {
   position: absolute;
-  top: -12%;
+  top: -22%;
   left: 0;
 }
 
-#leadArea .listItems_tb {
-  position: relative;
+#leadArea .content_box {
+  background: #d00e31;
+  padding: 3.5vw 5% 3.7vw;
 }
 
 #leadArea .text {
   position: relative;
   color: #fff;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 5.2vw;
+  line-height: 1.3;
   padding-bottom: 10px;
   font-weight: bold;
-  width: 72%;
+  width: 67vw;
 }
 
 #leadArea .text span {
-  font-size: 14px;
+  font-size: 4vw;
+}
+
+#leadArea .listFlex {
+  position: relative;
 }
 
 #leadArea .tooltip_01 {
   position: absolute;
-  top: -52%;
-  right: -1%;
+  bottom: 100%;
+  right: -2.5%;
   width: 27%;
 }
 
 #leadArea .btn {
-  margin: 12px 0;
+  margin: 2.6vw 0;
   text-align: center;
 }
 
 #leadArea .note {
   color: #fff;
-  line-height: 25px;
-  font-weight: bold;
   text-align: center;
 }
 
@@ -164,8 +162,8 @@
 }
 
 #local_01 .note {
-  padding: 15px 9% 60px;
-  line-height: 25px;
+  font-size: 2.7vw;
+  padding: 3.2vw 9% 18vw;
 }
 
 /*	local_02
@@ -173,6 +171,7 @@
 #local_02 {
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 6.6vw;
 }
 
 #local_02 .title_h2 {
@@ -182,75 +181,79 @@
 
 #local_02 .text {
   text-align: center;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 4vw;
+  line-height: 1.6;
   font-weight: bold;
-  padding: 20px 0 30px;
+  padding: 5vw 0 8vw;
 }
 
 /*	local_03
 ----------------------------------*/
 #local_03 .row_01 {
-  margin-top: 15px;
+  margin-top: 4.2vw;
   background: #fdf3f4;
   position: relative;
   padding: 0px 10px 15px;
 }
 
 #local_03 .row_01 .avatar {
-  width: 209px;
   position: relative;
   top: -10px;
-  width: 40%;
+  width: 35vw;
 }
 
 #local_03 .row_01 .description {
   margin-left: 5%;
-  width: 51%;
+  width: 50vw;
   padding-right: 2%;
 }
 
 #local_03 .row_01 .title_h3 {
+  position: relative;
+  z-index: 9;
   color: #d00e31;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 4.8vw;
+  line-height: 1.2;
 }
 
 #local_03 .row_01 .title_h3 span {
+  font-weight: normal;
   color: #000;
-  font-size: 12px;
+  font-size: 3vw;
 }
 
 #local_03 .row_01 .title_h3 .fs38 {
-  font-size: 24px;
+  font-weight: bold;
+  font-size: 6.9vw;
 }
 
 #local_03 .row_01 .text {
+  font-size: 2.6vw;
   text-align: justify;
   padding-top: 5px;
-  line-height: 20px;
+  line-height: 2;
 }
 
 #local_03 .row_01 .thumbnail_news {
   position: absolute;
   right: 10px;
   top: -2%;
-  width: 54%;
+  width: 54vw;
 }
 
 #local_03 .row_02 {
-  padding: 0px 7% 15px;
+  padding: 0px 4.9% 7vw 5.7%;
 }
 
 #local_03 .row_02 .listFlex {
-  padding-top: 15px;
+  padding-top: 4vw;
 }
 
 #local_03 .row_02 .text {
   font-weight: bold;
-  padding-bottom: 15px;
-  font-size: 15px;
-  line-height: 26px;
+  padding-bottom: 4.2vw;
+  font-size: 4vw;
+  line-height: 1.7;
 }
 
 #local_03 .row_02 .avatar {
@@ -266,8 +269,9 @@
 #local_03 .row_02 .avatar li {
   margin-right: 18px;
   width: calc((100% / 2) - 9px + (0px / 2));
-  line-height: 22px;
-  margin-bottom: 20px;
+  line-height: 1.2;
+  margin-bottom: 3.6vw;
+  font-weight: bold;
 }
 
 #local_03 .row_02 .avatar li:nth-child(even) {
@@ -275,13 +279,13 @@
 }
 
 #local_03 .row_02 .avatar p {
-  padding-top: 8px;
-  font-size: 14px;
+  padding-top: 3vw;
+  font-size: 3.7vw;
 }
 
 #local_03 .row_02 .avatar h5 {
   color: #d00e31;
-  font-size: 22px;
+  font-size: 5.9vw;
 }
 
 /*	local_infoSale
@@ -292,32 +296,36 @@
   padding-top: 11%;
 }
 
+.local_infoSale .note {
+  font-size: 2.9vw;
+}
+
 .local_infoSale .title_h2 {
   top: -1%;
   left: 0;
   position: absolute;
   font-weight: bold;
-  font-size: 15px;
-  line-height: 29px;
+  font-size: 3.7vw;
+  line-height: 1.4;
   color: #d00e31;
   background: url("../images/tit_05_sp.png") no-repeat;
   background-size: 100%;
   width: 71%;
   height: 26%;
-  padding-top: 5.5%;
+  padding-top: 6.5%;
   padding-left: 29%;
   z-index: 1;
 }
 
 .local_infoSale .imageSale {
   padding: 0 3%;
-  width: 96%;
+  width: 94%;
 }
 
 .local_infoSale .noteBtn {
   text-align: center;
   position: relative;
-  font-size: 13px;
+  font-size: 2.6vw;
   z-index: 1;
   font-weight: bold;
   padding-top: 3px;
@@ -329,8 +337,13 @@
   background: url("../images/bg_box.png");
   background-size: 100%;
   padding-left: 6%;
-  padding-right: 6%;
+  padding-right: 5%;
   padding-bottom: 12px;
+}
+
+.local_infoSale .row_01 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .local_infoSale .row_01:after {
@@ -357,16 +370,17 @@
 
 .local_infoSale .row_01 .text {
   position: relative;
-  width: 70%;
-  padding-top: 20px;
+  width: 67vw;
+  padding-top: 4vw;
   padding-bottom: 5px;
-  font-size: 18px;
-  line-height: 25px;
+  padding-left: 1.8vw;
+  font-size: 5vw;
+  line-height: 1.3;
   font-weight: bold;
 }
 
 .local_infoSale .row_01 span {
-  font-size: 14px;
+  font-size: 3.6vw;
 }
 
 .local_infoSale .row_01 .imgSale {
@@ -375,9 +389,9 @@
 
 .local_infoSale .row_01 .tooltip_02 {
   position: absolute;
-  top: -202%;
-  right: -5%;
-  width: 30%;
+  top: -188%;
+  right: -4%;
+  width: 28%;
 }
 
 .local_infoSale .row_01 .btn {
@@ -393,9 +407,13 @@
 .local_infoSale .note.second {
   text-align: center;
   padding: 10px 0 14px;
-  line-height: 20px;
+  line-height: 1.5;
   width: 90%;
   margin: auto;
+}
+
+.local_infoSale .note .line2 {
+  padding-top: 1.5vw;
 }
 
 .local_infoSale .note a {
@@ -409,9 +427,14 @@
   background-size: 100%;
   border-radius: 20px;
   padding-bottom: 12px;
-  padding-top: 7px;
+  padding-top: 1.8vw;
   padding-left: 6%;
-  padding-right: 6%;
+  padding-right: 5%;
+}
+
+.local_infoSale .row_02 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .local_infoSale .row_02:before {
@@ -441,14 +464,10 @@
 
 .local_infoSale .row_02 .listFlex {
   position: relative;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .local_infoSale .row_02 .listFlex.second {
@@ -456,10 +475,12 @@
 }
 
 .local_infoSale .row_02 .title_h3 {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   padding: 10px 16px 8px 26px;
-  font-size: 15px;
-  line-height: 26px;
-  width: 40%;
+  font-size: 3.5vw;
+  line-height: 1.3;
+  width: 44vw;
   margin-left: -2.7%;
   font-weight: bold;
   color: #d00e31;
@@ -470,15 +491,16 @@
 }
 
 .local_infoSale .row_02 .text {
-  padding-left: 5px;
+  padding-top: 2.9vw;
+  padding-left: 2.9vw;
   padding-right: 10px;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 4.5vw;
+  line-height: 1;
   font-weight: bold;
 }
 
 .local_infoSale .row_02 .text span {
-  font-size: 12px;
+  font-size: 2.6vw;
 }
 
 .local_infoSale .row_02 .text .fs12 {
@@ -489,7 +511,7 @@
 ----------------------------------*/
 #local_04 {
   background: url("../images/background_01.png");
-  padding: 28px 7% 22px;
+  padding: 7.3vw 4.9% 5.7vw 5.7%;
 }
 
 #local_04 .row_01 .title_h3 {
@@ -498,32 +520,34 @@
 }
 
 #local_04 .row_01 .description {
-  padding-bottom: 42px;
+  padding-bottom: 10vw;
 }
 
 #local_04 .row_01 .text {
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 4vw;
   padding-top: 16px;
-  line-height: 26px;
+  line-height: 1.6;
 }
 
 #local_04 .row_02 .note {
-  font-weight: bold;
-  padding-top: 23px;
+  padding-top: 4vw;
+  line-height: 1.6;
+  font-size: 4vw;
 }
 
 #local_04 .row_03 {
-  padding-bottom: 20px;
+  padding-bottom: 5.3vw;
 }
 
 #local_04 .row_03 .title_h3 {
-  padding: 50px 0 15px;
+  padding: 12vw 0 4.2vw;
 }
 
 #local_04 .row_03 .avatar {
-  margin-left: -10%;
+  margin-left: -9%;
   float: left;
-  width: 45%;
+  width: 42%;
 }
 
 #local_04 .row_03 .description {
@@ -534,8 +558,8 @@
 #local_04 .row_03 .description .text {
   font-weight: bold;
   padding-left: 10px;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 4vw;
+  line-height: 1.5;
 }
 
 #local_04 .row_04 .listFlex {
@@ -546,12 +570,12 @@
   flex-direction: column;
   background: rgba(255, 255, 255, 0.65);
   border-radius: 12px;
-  padding: 25px 8%;
+  padding: 5vw 5.5%;
 }
 
 #local_04 .row_04 .title_h5 {
   color: #d00e31;
-  font-size: 13px;
+  font-size: 3.1vw;
 }
 
 #local_04 .row_04 .title_h4 {
@@ -559,12 +583,14 @@
 }
 
 #local_04 .row_04 .title_h4 span {
+  font-weight: normal;
   color: #000;
-  font-size: 10px;
+  font-size: 2.9vw;
 }
 
 #local_04 .row_04 .title_h4 .fs38 {
-  font-size: 23px;
+  font-weight: bold;
+  font-size: 6.2vw;
 }
 
 #local_04 .row_04 .avatar {
@@ -595,7 +621,8 @@
 }
 
 #local_04 .row_04 .avatar .text {
-  line-height: 20px;
+  font-size: 2.6vw;
+  line-height: 1.6;
 }
 
 #local_04 .row_04 .description {
@@ -608,28 +635,28 @@
 #local_04 .row_04 .description .text {
   padding-top: 14px;
   font-weight: bold;
-  font-size: 15px;
-  line-height: 29px;
+  font-size: 4vw;
+  line-height: 1.6;
   text-align: justify;
 }
 
 /*	local_05
 ----------------------------------*/
 #local_05 {
-  padding-top: 54px;
+  padding-top: 9vw;
   padding-bottom: 40px;
 }
 
 #local_05 .title_h2 {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 9vw;
   text-align: center;
-  font-size: 19px;
-  line-height: 34px;
+  font-size: 4.8vw;
+  line-height: 1.3;
 }
 
 #local_05 .title_h2 span {
-  font-size: 32px;
+  font-size: 7.8vw;
   color: #d00e31;
 }
 
@@ -646,7 +673,7 @@
 }
 
 #local_05 .tableContent {
-  padding: 0 7%;
+  padding: 12px 5.6% 0 6.3%;
 }
 
 #local_05 .tableContent a {
@@ -655,21 +682,23 @@
 
 #local_05 .tableContent .items {
   border-bottom: 2px dotted #8a8a8a;
-  margin: 22px 0;
+  margin: 5.3vw 0;
 }
 
 #local_05 .tableContent .items li {
-  font-size: 16px;
-  line-height: 33px;
+  font-size: 4vw;
+  line-height: 1.7;
   font-weight: bold;
-  padding-left: 40px;
+  padding-left: 8%;
   background: url("../images/ico_A.png") no-repeat;
-  margin-bottom: 25px;
+  background-size: 6%;
+  margin-bottom: 5.3vw;
 }
 
 #local_05 .tableContent .items .red {
-  margin-bottom: 6px;
+  margin-bottom: 2.2vw;
   background: url("../images/ico_Q.png") no-repeat;
+  background-size: 6%;
 }
 
 /*	Footer
@@ -678,6 +707,7 @@
   text-align: center;
   line-height: 25px;
   padding: 25px 5px 20px;
+  font-weight: bold;
 }
 
 #footer_vegebox a {
@@ -696,56 +726,9 @@
 }
 
 #vegebox img {
+  width: 100%;
   max-width: 100%;
   height: auto;
-}
-
-@media screen and (max-width: 350px) {
-  .btn {
-    font-size: 18px;
-  }
-  .btn:after {
-    content: "";
-    position: absolute;
-    right: 2%;
-    top: calc(50% - 12px);
-    background: url("../images/arrow_btn_small.png") no-repeat;
-    background-size: 100% 100%;
-    width: 24px;
-    height: 24px;
-  }
-  #leadArea .text {
-    font-size: 15px;
-    line-height: 22px;
-  }
-  #leadArea .text span {
-    font-size: 12px;
-  }
-  .local_infoSale .title_h2 {
-    font-size: 13px;
-    padding-top: 5%;
-  }
-  .local_infoSale .row_01 .text {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .local_infoSale .row_01 span {
-    font-size: 12px;
-  }
-  .local_infoSale .row_02 .title_h3 {
-    padding: 5px 8px 4px 14px;
-    line-height: 22px;
-  }
-  .local_infoSale .row_02 .text {
-    padding-right: 10px;
-    font-size: 15px;
-  }
-  #local_03 .row_01 .title_h3 {
-    font-size: 16px;
-  }
-  #local_03 .row_01 .description {
-    width: 54%;
-  }
 }
 
 .tac {
@@ -776,14 +759,14 @@
   margin-top: 0 !important;
 }
 
-.mR-15 {
-  margin-right: -15px;
+.mR-10 {
+  margin-right: -10px;
 }
 
 .mL-6 {
   margin-left: -6px;
 }
 
-.mR-15 {
+.mR-10 {
   margin-right: inherit;
 }

@@ -9,8 +9,9 @@
     @extend %clearfix;
 }
 .note {
-    font-size: 13px;
-    line-height: 23px;
+    font-size: 2.2vw;
+    line-height: 1.5;
+    font-weight: bold;
 }
 
 .btn {
@@ -24,19 +25,21 @@
     border: 2px solid $color-a;
     text-decoration: none;
     text-align: center;
+    box-sizing: border-box;
     // for btn row 01
     margin-top: 22px;
     padding: 17px 0px 14px;
     width: 100%;
-    font-size: 23px;
+    font-size: 6vw;
     &:after {
         content: "";
         position: absolute;
         right: 2%;
-        top: calc(50% - 15px);
-        background: url('../images/arrow_btn_small.png') no-repeat;
-        width: 30px;
-        height: 30px;
+        top: calc(50% - 3vw);
+        background: url('../images/arrow_btn_big.png') no-repeat;
+        background-size: 100% 100%;
+        width: 6vw;
+        height: 6vw;
     }
     // for btn row 02
     &_small {

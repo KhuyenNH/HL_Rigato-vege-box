@@ -36,6 +36,7 @@
 .note {
   font-size: 14px;
   letter-spacing: 0.5px;
+  font-weight: bold;
 }
 
 .btn {
@@ -134,6 +135,7 @@
 /*	Page main
 ----------------------------------*/
 #leadArea {
+  position: relative;
   background: #d00e31;
   padding-top: 48px;
   color: #fff;
@@ -148,7 +150,7 @@
 #leadArea .text {
   font-weight: bold;
   font-size: 36px;
-  max-width: 720px;
+  max-width: 758px;
   padding-left: 20px;
   padding-bottom: 10px;
 }
@@ -205,8 +207,8 @@
   padding-top: 18px;
   font-size: 15px;
   line-height: 22px;
-  text-indent: -20px;
-  padding-left: 30px;
+  text-indent: -25px;
+  padding-left: 35px;
 }
 
 /*	local_02
@@ -250,11 +252,13 @@
 }
 
 #local_03 .row_01 .title_h3 span {
+  font-weight: normal;
   color: #000;
   font-size: 17px;
 }
 
 #local_03 .row_01 .title_h3 .fs38 {
+  font-weight: bold;
   font-size: 38px;
 }
 
@@ -272,7 +276,7 @@
 }
 
 #local_03 .row_02 {
-  padding: 37px 15px 112px;
+  padding: 37px 0 112px 15px;
 }
 
 #local_03 .row_02 .listFlex {
@@ -347,7 +351,7 @@
 .local_infoSale .row_01 .text {
   position: relative;
   width: 404px;
-  padding-top: 68px;
+  padding-top: 65px;
   padding-left: 72px;
   font-size: 36px;
   line-height: 40px;
@@ -397,13 +401,13 @@
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.local_infoSale .row_02 .listFlex.second {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end;
-}
-
-.local_infoSale .row_02 .listFlex.second {
   padding-top: 15px;
   padding-left: 82px;
 }
@@ -423,13 +427,13 @@
 .local_infoSale .row_02 .text {
   padding-top: 15px;
   text-align: right;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 18px;
   font-weight: bold;
 }
 
 .local_infoSale .row_02 .text span {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 .local_infoSale .row_02 .text .fs12 {
@@ -468,7 +472,7 @@
 }
 
 #local_04 .row_02 .note {
-  font-weight: bold;
+  width: 860px;
   padding-top: 23px;
 }
 
@@ -501,6 +505,7 @@
 #local_04 .row_03 .description {
   padding-left: 20px;
   padding-bottom: 105px;
+  width: 639px;
 }
 
 #local_04 .row_03 .description .text {
@@ -530,6 +535,7 @@
 }
 
 #local_04 .row_04 .title_h5 {
+  text-align: center;
   padding-top: 17px;
   color: #d00e31;
   font-size: 18.6px;
@@ -540,11 +546,13 @@
 }
 
 #local_04 .row_04 .title_h4 span {
+  font-weight: normal;
   color: #000;
   font-size: 17.4px;
 }
 
 #local_04 .row_04 .title_h4 .fs38 {
+  font-weight: bold;
   font-size: 38px;
 }
 
@@ -631,6 +639,7 @@
 /*	Footer
 ----------------------------------*/
 #footer_vegebox {
+  font-weight: bold;
   text-align: center;
   font-size: 16px;
   line-height: 34px;
@@ -670,8 +679,8 @@
   margin-top: 0 !important;
 }
 
-.mR-15 {
-  margin-right: -15px;
+.mR-10 {
+  margin-right: -10px;
 }
 
 @media all and (-ms-high-contrast: none) {

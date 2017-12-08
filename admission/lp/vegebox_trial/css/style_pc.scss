@@ -38,6 +38,7 @@
 /*	Page main
 ----------------------------------*/
 #leadArea {
+	position: relative;
 	background: $color-primary;
 	padding-top: 48px;
 	color: $color-a;
@@ -48,9 +49,8 @@
 	}
 	.text {
 		font-weight: bold;
-		// font-size: 29px;
 		font-size: 36px;
-		max-width: 720px;
+		max-width: 758px;
 		padding-left: 20px;
 		padding-bottom: 10px;
 		span {
@@ -95,8 +95,8 @@
 		padding-top: 18px;
 		font-size: 15px;
 		line-height: 22px;
-		text-indent: -20px;
-		padding-left: 30px;
+		text-indent: -25px;
+		padding-left: 35px;
 	}
 }
 /*	local_02
@@ -134,10 +134,12 @@
 			font-size: 27.5px;
 			line-height: 38px;
 			span {
+				font-weight: normal;
 				color: $color-o;
 				font-size: 17px;
 			}
 			.fs38 {
+				font-weight: bold;
 				font-size: 38px;
 			}
 		}
@@ -154,7 +156,7 @@
 		}
 	}
 	.row_02 {
-		padding: 37px 15px 112px;
+		padding: 37px 0 112px 15px;
 		.listFlex {
 			padding-top: 35px;
 		}
@@ -211,7 +213,7 @@
 		.text {
 			position: relative;
 			width: 404px;
-			padding-top: 68px;
+			padding-top: 65px;
 			padding-left: 72px;
 			// font-size: 29px;
 			font-size: 36px;
@@ -232,13 +234,6 @@
 			top: -109px;
 			right: -41px;
 		}
-		// .btn {
-		// 	padding: 20px 0px 15px;
-		// 	width: 657px;
-		// 	font-size: 39px;
-		// 	margin-top: 22px;
-		// 	text-align: center;
-		// }
 	}
 	.note {
 		padding: 6px 0 10px 37px;
@@ -260,8 +255,8 @@
 		padding-right: 48px;
 		.listFlex {
 			justify-content: space-between;
-			align-items: flex-end;
 			&.second {
+				align-items: flex-end;
 				padding-top: 15px;
 				padding-left: 82px;
 			}
@@ -280,12 +275,11 @@
 		.text {
 			padding-top: 15px;
 			text-align: right;
-			// font-size: 25px;
-			font-size: 32px;
+			font-size: 30px;
 			line-height: 18px;
 			font-weight: bold;
 			span {
-				font-size: 20px;
+				font-size: 21px;
 			}
 			.fs12 {
 				font-size: 14px;
@@ -317,7 +311,7 @@
 	.row_02 {
 		padding-left: 50px;
 		.note {
-			font-weight: bold;
+			width: 860px;
 			padding-top: 23px;
 		}
 	}
@@ -343,6 +337,7 @@
 		.description {
 			padding-left: 20px;
 			padding-bottom: 105px;
+			width: 639px;
 			.text {
 				font-weight: bold;
 				padding-top: 22px;
@@ -364,6 +359,7 @@
 			padding: 47px 49px 38px 62px;
 		}
 		.title_h5 {
+			text-align: center;
 			padding-top: 17px;
 			color: $color-primary;
 			font-size: 18.6px;
@@ -371,10 +367,12 @@
 		.title_h4 {
 			font-weight: bold;
 			span {
+				font-weight: normal;
 				color: $color-o;
 				font-size: 17.4px;
 			}
 			.fs38 {
+				font-weight: bold;
 				font-size: 38px;
 			}
 		}
@@ -450,6 +448,7 @@
 /*	Footer
 ----------------------------------*/
 #footer_vegebox {
+	font-weight: bold;
 	text-align: center;
 	font-size: 16px;
 	line-height: 34px;
