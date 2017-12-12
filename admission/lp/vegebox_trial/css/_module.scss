@@ -25,6 +25,7 @@
 }
 
 .btn {
+    transition: all 0.4s;
     background: $color-btn;
     position: relative;
     display: block;
@@ -47,6 +48,11 @@
         background: url('../images/arrow_btn_big.png') no-repeat;
         width: 37px;
         height: 37px;
+    }
+    &:hover {
+        border: 3px solid $color-btn;
+        color: $color-btn;
+        background: $color-a;
     }
     // for btn row 02
     &_small {
