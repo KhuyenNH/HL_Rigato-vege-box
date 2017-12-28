@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    width: 1100px;
+    margin: auto;
+}
+.container_box {
+    position: relative;
+    width: 920px;
+    margin: auto;
+}
+.clearfix {
+    clear: both;
+}
+.title_h2 {
+    text-align: center;
+}
+.listItems_tb {
+    display: table;
+    width: 100%;
+    .items {
+        display: table-cell;
+    }
+}
+.listFlex {
+    display: flex;
+    align-items: flex-start;
+}
+.listItems {
+    @extend %clearfix;
+}
+.text {
+    color: $text;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.4;
+}
+.note {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: $note;
+}
+
+.btn_big {
+    padding-top: 3vw;
+    text-align: center;
+}

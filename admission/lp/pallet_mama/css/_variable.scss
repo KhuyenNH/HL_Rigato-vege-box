@@ -1,0 +1,21 @@
+%w970 {
+    width: 970px;
+    margin: auto;
+}
+%clearfix {
+    &:after {
+        content: "";
+        clear: both;
+        visibility: hidden;
+        display: block;
+        height: 0;
+    }
+}
+
+// ----------------- Color
+$color-primary: #462910;
+$text: #634b48;
+$note: #878787;
+
+$color-a: #fff;
+$color-o: #000;
