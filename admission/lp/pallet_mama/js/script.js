@@ -99,15 +99,18 @@ $(window).resize(function() {
 
 /* Slider thumbnail
 -------------------------------------- */
-$(".slider_thumb").slick({
-	centerPadding: '220px',
-    dots: true,
-	arrows: true,
-    infinite: true,
-    centerMode: true,
-    slidesToShow: 1,
-    slidesToScroll: 1
+$('#slider_thumb').owlCarousel({
+    center: true,
+	autoPlay: 3000,
+    items: 2,
+    loop: true,
+    margin: 40,
+	pagination: true,
+	dots: true,
+	nav: true,
+    navText: ["<img src='images/prev.png'>","<img src='images/next.png'>"]
 });
+
 /* Accordion
 -------------------------------------- */
 var open = 'images/btn_open.png';

@@ -27,8 +27,8 @@
 		<!-- /include -->
 		<!-- landing page stylesheet -->
 		<link rel="stylesheet" href="../../../admission/lp/pallet_mama/css/style_pc.css?ver=3" media="all and (min-width: 768px)">
-		<link rel="stylesheet" href="../../../admission/lp/pallet_mama/css/slick.css" media="all and (max-width: 767px)">
-		<link rel="stylesheet" href="../../../admission/lp/pallet_mama/css/slick-theme.css" media="all and (max-width: 767px)">
+		<link rel="stylesheet" href="../../../admission/lp/pallet_mama/css/owl.carousel.min.css" media="all and (max-width: 767px)">
+		<link rel="stylesheet" href="../../../admission/lp/pallet_mama/css/owl.theme.default.min.css" media="all and (max-width: 767px)">
 		<link rel="stylesheet" href="../../../admission/lp/pallet_mama/css/style_sp.css?ver=3" media="all and (max-width: 767px)">
 	</head>
 	<body data-nav="nav03">
@@ -137,17 +137,17 @@
 					        </div>
 							<div class="local_03_in is_sp">
 								<h2 class="title_h2"><img src="images/tit_h2_slider_01.jpg" alt=""></h2>
-								<div class="slider_thumb slider">
-									<div class="items">
+								<div class="owl-carousel" id="slider_thumb">
+									<div class="item">
 								        <img src="images/img_slider_02.png">
 								    </div>
-								    <div class="items">
+								    <div class="item">
 								        <img src="images/img_slider_03.png">
 								    </div>
-								    <div class="items">
+								    <div class="item">
 								        <img src="images/img_slider_01.png">
 								    </div>
-									<div class="items">
+									<div class="item">
 								        <img src="images/img_slider_01.png">
 								    </div>
 								</div>
@@ -164,7 +164,7 @@
 					    <div id="local_04">
 					        <div class="container">
 					            <h2 class="title_h2"><img src="images/tit_h2_03_pc.png" alt="らでぃっしゅぼーやの『ぱれっと』がママに人気のひみつ"></h2>
-					            <div class="local_04_in">
+					            <div class="local_04_in hidden_sp">
 					                <div class="rows_01">
 					                    <div class="description">
 					                        <h3 class="title_h3 first"><img src="images/tit_h3_02_pc.png" alt="全国から美味しい野菜をお届けこだわり食材"></h3>
@@ -235,12 +235,12 @@
 									</div>
 					                <!-- /rows_04 -->
 									<div class="rows_banner is_sp">
-										<div class="imgContent hidden">
+										<div class="imgContent">
 											<img src="images/img_show_01.jpg" alt="らでぃっしゅぼーやの『ぱれっと』がママに人気のひみつ">
 										</div>
-										<a href="" class="btn_toggle accordion_prev"><img src="images/btn_open.png" alt="詳しくはこちら"></a>
 									</div>
 					            </div>
+								<a href="" class="btn_toggle accordion_prev is_sp"><img src="images/btn_close.png" alt="詳しくはこちら"></a>
 					        </div>
 					    </div>
 					    <!-- /local_04 -->
@@ -298,26 +298,27 @@
 					    <div id="local_06">
 					        <div class="container">
 					            <h2 class="title_h2"><img src="images/tit_h2_04_pc.png" alt="らでぃっしゅぼーやの野菜はこだわり栽培"></h2>
-					            <div class="listNews">
-					                <div class="container_box">
-					                    <div class="listFlex">
-					                        <div class="items"><img src="images/news_01_pc.jpg" alt="土作りその土地や作物に合わせて、生産者の長年の経験によりブレンドされた土が、作物をじっくり元気に育てます。"></div>
-					                        <div class="items"><img src="images/news_02_pc.jpg" alt="反農薬農作物の成長に必要不可欠な微生物や虫などを保った、生態系が豊かな土で農業に取り組んでいます。 "></div>
-					                        <div class="items"><img src="images/news_03_pc.jpg" alt="自分たちも食べたい物を農作物は、生産者自身が実際に味を確かめて、本当に食べてもらいたいと思うものを出荷します。"></div>
-					                    </div>
-					                </div>
-					            </div>
-					            <div class="container_box">
-					                <div class="imgContent"><img src="images/news_04_pc.png" alt="厳選契約農家のこだわり栽培だから栄養満点でみずみずしい『キャベツ』外の葉ほどカロテン、ビタミンC、ビタミンUがたっぷり。安心できるキャベツだから、外の葉まで美味しく食べられます！甘くて濃厚な『トマト』太陽の恵みたっぷり、甘くて濃厚な味わい。一口食べて違いが実感できると評判です。ほくほくの『じゃがいも』土の状態がそのまま伝わるじゃがいもだから、らでぃっしゅぼーやの丁寧な土づくりが、そのまま味として出てます。"></div>
-					                <p class="note is_pc">※毎回配送されるこだわり野菜の内容は異なります。</p>
-
-									<div class="rows_banner is_sp">
-										<div class="imgContent hidden">
-											<img src="images/img_show_02.png" alt="らでぃっしゅぼーやの野菜はこだわり栽培">
+					            <div class="hidden_sp">
+						            <div class="listNews">
+						                <div class="container_box">
+						                    <div class="listFlex">
+						                        <div class="items"><img src="images/news_01_pc.jpg" alt="土作りその土地や作物に合わせて、生産者の長年の経験によりブレンドされた土が、作物をじっくり元気に育てます。"></div>
+						                        <div class="items"><img src="images/news_02_pc.jpg" alt="反農薬農作物の成長に必要不可欠な微生物や虫などを保った、生態系が豊かな土で農業に取り組んでいます。 "></div>
+						                        <div class="items"><img src="images/news_03_pc.jpg" alt="自分たちも食べたい物を農作物は、生産者自身が実際に味を確かめて、本当に食べてもらいたいと思うものを出荷します。"></div>
+						                    </div>
+						                </div>
+						            </div>
+						            <div class="container_box">
+						                <div class="imgContent"><img src="images/news_04_pc.png" alt="厳選契約農家のこだわり栽培だから栄養満点でみずみずしい『キャベツ』外の葉ほどカロテン、ビタミンC、ビタミンUがたっぷり。安心できるキャベツだから、外の葉まで美味しく食べられます！甘くて濃厚な『トマト』太陽の恵みたっぷり、甘くて濃厚な味わい。一口食べて違いが実感できると評判です。ほくほくの『じゃがいも』土の状態がそのまま伝わるじゃがいもだから、らでぃっしゅぼーやの丁寧な土づくりが、そのまま味として出てます。"></div>
+						                <p class="note is_pc">※毎回配送されるこだわり野菜の内容は異なります。</p>
+										<div class="rows_banner is_sp">
+											<div class="imgContent">
+												<img src="images/img_show_02.png" alt="らでぃっしゅぼーやの野菜はこだわり栽培">
+											</div>
 										</div>
-										<a href="" class="btn_toggle accordion_prev"><img src="images/btn_open.png" alt="詳しくはこちら"></a>
-									</div>
+						            </div>
 					            </div>
+								<a href="" class="btn_toggle accordion_prev"><img src="images/btn_open.png" alt="詳しくはこちら"></a>
 					        </div>
 					    </div>
 					    <!-- /local_06 -->
@@ -476,7 +477,7 @@
 		<script src="../../../admission/common/js/base.js?ver=<?php filedata('common/js/base.js');?>"></script>
 		<!-- /include -->
 		<!-- landing page javascript -->
-		<script src="js/slick.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
 		<script src="js/script.js"></script>
 		<?php include $_SERVER['DOCUMENT_ROOT'].'/admission/common/inc/inc_tag_bottom.html'; ?>
 	</body>

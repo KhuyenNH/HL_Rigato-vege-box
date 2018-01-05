@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.listItems:after, #local_01 .box_detail:after, #local_02 .box_list_news .postItems:after, #local_03 .slider_thumb:after, #local_04 .rows_items:after {
+.listItems:after, #local_01 .box_detail:after, #local_02 .box_list_news .postItems:after, #local_04 .rows_items:after {
   content: "";
   clear: both;
   visibility: hidden;
@@ -71,6 +71,10 @@
 }
 
 .is_pc {
+  display: none;
+}
+
+.hidden_sp {
   display: none;
 }
 
@@ -194,48 +198,54 @@
   background-size: 100%;
 }
 
-#local_03 .slider_thumb {
-  padding: 10px 0;
+#local_03 #slider_thumb {
+  position: relative;
 }
 
-#local_03 .slider_thumb img {
+#local_03 #slider_thumb .owl-nav {
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  top: calc(50% - 40px);
+}
+
+#local_03 #slider_thumb .owl-nav img {
   width: auto;
 }
 
-#local_03 .slick-prev, #local_03 .slick-next {
-  z-index: 99;
-  width: 26px;
-  height: 30px;
+#local_03 #slider_thumb .owl-nav .owl-prev {
+  position: absolute;
+  left: 0;
 }
 
-#local_03 .slick-prev:before, #local_03 .slick-next:before {
-  display: none;
+#local_03 #slider_thumb .owl-nav .owl-next {
+  position: absolute;
+  right: 0;
 }
 
-#local_03 .slick-prev {
-  left: 10px;
-  background: url("../images/prev.png") no-repeat center;
+#local_03 .owl-dots {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-#local_03 .slick-next {
-  background: url("../images/next.png") no-repeat center;
-  right: 10px;
-}
-
-#local_03 .slick-dots {
-  bottom: -30px;
-}
-
-#local_03 .slick-dots li.slick-active button:before {
-  background: #462910;
-}
-
-#local_03 .slick-dots li button:before {
-  opacity: 1 !important;
-  content: "";
+#local_03 .owl-dot span {
+  display: block;
   background: #fff;
-  border-radius: 50px;
+  border-radius: 20px;
   border: 1px solid #462910;
+  height: 4vw;
+  margin: 5px 7px;
+  width: 4vw;
+  cursor: pointer;
+}
+
+#local_03 .owl-dot.active span {
+  background: #462910;
 }
 
 /*	local_04
@@ -270,6 +280,7 @@
 #local_04 .rows_01 .description {
   background: url("../images/thumb_06_sp.png") no-repeat;
   background-position: right 10vw;
+  background-size: 44%;
 }
 
 #local_04 .rows_01 .text {
@@ -350,7 +361,7 @@
   left: 0;
   right: 0;
   height: 24px;
-  background: url("../images/bg_border_top_sp.png");
+  background: url("../images/bg_border_top_sp.png") no-repeat;
   background-size: 100%;
 }
 
@@ -361,7 +372,7 @@
   left: 0;
   right: 0;
   height: 14px;
-  background: url("../images/bg_border_bottom_sp.png");
+  background: url("../images/bg_border_bottom_sp.png") no-repeat;
   background-size: 100%;
 }
 
@@ -374,13 +385,14 @@
   float: left;
   margin-top: -35px;
   margin-left: -5vw;
+  width: 36%;
 }
 
 #local_04 .box_04_in .description {
   position: relative;
   float: left;
   padding-top: 10px;
-  width: 70%;
+  width: 67%;
 }
 
 #local_04 .box_04_in .text {
@@ -388,7 +400,8 @@
   padding: 15px 5% 0;
 }
 
-#local_04 .rows_banner {
+#local_04 .btn_toggle {
+  margin-top: -1px;
   background: url("../images/bg_orange.png");
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -455,7 +468,10 @@
   padding-right: 6.7%;
 }
 
-#local_06 .rows_banner {
+#local_06 .btn_toggle {
+  margin-left: 6.7%;
+  margin-right: 6.7%;
+  margin-top: -1px;
   background: url("../images/bg_pink_02.png");
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -471,11 +487,6 @@
 
 #local_07 .title_h2 {
   padding-bottom: 5vw;
-}
-
-#local_07 .mL-3, #local_07 .mL-8 {
-  width: auto;
-  max-width: inherit;
 }
 
 #local_07 .listProduct {
@@ -516,7 +527,6 @@
 }
 
 #local_07 .items .avatar {
-  min-height: 215px;
   text-align: center;
 }
 
@@ -564,7 +574,8 @@
 #local_09 .listItems {
   padding-top: 4.6vw;
   background: #fff;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 #local_09 .avatar {
@@ -572,14 +583,13 @@
   margin-left: -4.2vw;
 }
 
-#local_09 .avatar img {
-  width: auto;
-  max-width: inherit;
-}
-
 #local_09 .text {
   padding-left: 6.3%;
   padding-right: 6.3%;
+}
+
+#local_09 .sale {
+  padding: 1.5vw 0 2.5vw;
 }
 
 #local_09 .note {
