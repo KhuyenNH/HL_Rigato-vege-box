@@ -36,15 +36,15 @@
 	padding: 55px 0;
 	background-size: cover;
 	margin-bottom: 196px;
-	&:after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: rgba(255, 255, 255, 0.3);
-	}
+	// &:after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	background-color: rgba(255, 255, 255, 0.3);
+	// }
 	.box_detail {
 		position: relative;
 		z-index: 9;
@@ -435,7 +435,36 @@
 		padding-left: 120px;
 	}
 }
-
+.noteFooter {
+	padding: 50px 0;
+	.blk-text {
+		margin: auto;
+		background: $color-a;
+		padding: 50px auto;
+		display: table;
+		text-align: left;
+		color: #4a2e12;
+		border: 1px solid #a6a6a6;
+		dt {
+			width: 156px;
+			display: table-cell;
+			box-sizing: border-box;
+			font-size: 25px;
+			text-align: center;
+			vertical-align: middle;
+			padding: 20px;
+		}
+		dd {
+			display: table-cell;
+			box-sizing: border-box;
+			padding: 20px;
+			border-left: 1px solid #a6a6a6;
+			ul a {
+				color: #d42544;
+			}
+		}
+	}
+}
 
 @import "helper";
 

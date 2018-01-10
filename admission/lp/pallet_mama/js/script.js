@@ -113,20 +113,24 @@ $('#slider_thumb').owlCarousel({
 
 /* Accordion
 -------------------------------------- */
-var open = 'images/btn_open.png';
-var close = 'images/btn_close.png';
+var open = 'images/btn_close.png';
+var close = 'images/btn_open.png';
 
 $('.accordion_prev').click(function(event) {
 	event.preventDefault();
 	var thisElem = $(this).find('img');
 	if (thisElem.attr('src') === open) {
 		thisElem.attr('src', close);
+		$(this).prev().hide();
 	} else {
 		thisElem.attr('src', open)
+		$(this).prev().show();
 	}
-
-	$(this).stop().prev().slideToggle();
+	$(this).stop().parent().prev().slideToggle();
 });
+
+
+
 var arrow_up = 'images/arrow_up.png';
 var arrow_down = 'images/arrow_down.png';
 $('.accordion_text').click(function(event) {
@@ -138,4 +142,13 @@ $('.accordion_text').click(function(event) {
 		thisElem.attr('src', arrow_up)
 	}
 	$(this).stop().prev().toggleClass('collapse');
+});
+
+
+/* Hover active img
+-------------------------------------- */
+$('img').hover(function() {
+	$(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+}, function() {
+	$(this).attr('src', $(this).attr('src').replace('_on', '_off'));
 });

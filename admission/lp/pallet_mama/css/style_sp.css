@@ -568,7 +568,7 @@
 ----------------------------------*/
 #local_09 {
   background: url("../images/bg_yellow_02.png");
-  padding: 6.6vw 6.7% 4vw;
+  padding: 6.6vw 6.7% 0;
 }
 
 #local_09 .listItems {
@@ -594,6 +594,7 @@
 
 #local_09 .note {
   margin-top: -2px;
+  margin-bottom: 5vw;
   font-size: 3.2vw;
   padding: 3vw 2vw 3.5vw 3vw;
   background: #fff;
@@ -601,10 +602,37 @@
   border-bottom-right-radius: 20px;
 }
 
-/*	local_10
+/*	noteFooter
 ----------------------------------*/
-#local_10 {
+.noteFooter {
   padding: 5vw 0;
+  background: #fff;
+  margin: 0 -8%;
+}
+
+.noteFooter .blk-text {
+  background: #fff;
+  margin: 0 8%;
+  text-align: left;
+  color: #4a2e12;
+  border: 1px solid #a6a6a6;
+}
+
+.noteFooter .blk-text dt {
+  border-bottom: 1px solid #a6a6a6;
+  width: 100%;
+  font-size: 3.2vw;
+  text-align: center;
+  padding: 2vw 2vw 1vw;
+}
+
+.noteFooter .blk-text dd {
+  font-size: 2vw;
+  padding: 20px;
+}
+
+.noteFooter .blk-text dd ul a {
+  color: #d42544;
 }
 
 @media all and (-ms-high-contrast: none) {

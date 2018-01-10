@@ -440,7 +440,7 @@
 ----------------------------------*/
 #local_09 {
 	background: url('../images/bg_yellow_02.png');
-	padding: 6.6vw 6.7% 4vw;
+	padding: 6.6vw 6.7% 0;
 	.listItems {
 		padding-top: 4.6vw;
 		background: $color-a;
@@ -464,6 +464,7 @@
 	}
 	.note {
 		margin-top: -2px;
+		margin-bottom: 5vw;
 		font-size: 3.2vw;
 		padding: 3vw 2vw 3.5vw 3vw;
 		background: $color-a;
@@ -472,10 +473,33 @@
 	}
 }
 
-/*	local_10
+/*	noteFooter
 ----------------------------------*/
-#local_10 {
+.noteFooter {
 	padding: 5vw 0;
+	background: $color-a;
+	margin: 0 -8%;
+	.blk-text {
+		background: $color-a;
+		margin: 0 8%;
+		text-align: left;
+		color: #4a2e12;
+		border: 1px solid #a6a6a6;
+		dt {
+			border-bottom: 1px solid #a6a6a6;
+			width: 100%;
+			font-size: 3.2vw;
+			text-align: center;
+			padding: 2vw 2vw 1vw;
+		}
+		dd {
+			font-size: 2vw;
+			padding: 20px;
+			ul a {
+				color: #d42544;
+			}
+		}
+	}
 }
 @media all and (-ms-high-contrast: none) {
 	#pallet {
